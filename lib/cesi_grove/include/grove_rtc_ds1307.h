@@ -8,4 +8,7 @@ bool GroveRTC_Init(void);
 bool GroveRTC_GetDateTime(RTC_DateTime *dt);
 bool GroveRTC_SetDateTime(const RTC_DateTime *dt);
 
+bool GroveRTC_WriteRAM(uint8_t offset, const uint8_t *data, uint8_t length);
+bool GroveRTC_ReadRAM(uint8_t offset, uint8_t *data, uint8_t length);
+
 #endif
